@@ -4,13 +4,13 @@ Minimal Elo rating implementation in Elixir. See tests for usage.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
   1. Add `xrated` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:xrated, "~> 0.1.0"}]
+      [{:xrated, github: "mazyod/xrated"}]
     end
     ```
 
