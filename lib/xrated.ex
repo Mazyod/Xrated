@@ -21,13 +21,13 @@ defmodule Xrated do
   end
 
   def calculate_rating_delta(player_a, player_b, :win),
-  do: calculate_rating_delta(player_a, player_b, 1.0, 0.0)
+  do: calculate_rating_delta(player_a, player_b, 1.0)
 
   def calculate_rating_delta(player_a, player_b, :tie),
-  do: calculate_rating_delta(player_a, player_b, 0.5, 0.5)
+  do: calculate_rating_delta(player_a, player_b, 0.5)
 
 
-  defp calculate_rating_delta(player_a, player_b, score_a, score_b) do
+  def calculate_rating_delta(player_a, player_b, score_a) do
     @k_factor * (score_a - expected_score(player_a, player_b))
   end
 end
