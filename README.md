@@ -22,3 +22,7 @@ The package can be installed as:
     end
     ```
 
+## Author
+
+Maz (Mazyad Alabduljalil)
+
